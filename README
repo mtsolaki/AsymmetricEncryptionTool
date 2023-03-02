@@ -1,0 +1,39 @@
+# README #
+
+The project contains the following files:
+
+# main.c #
+This file contains the main function of the program and includes the following libraries:
+<stdio.h>
+<stdlib.h>
+<string.h>
+<unistd.h>
+"rsa.h"
+"utils.h"
+
+# rsa.c #
+sieve_of_eratosthenis: Produces an array of prime numbers and returns the pointer to that array.
+
+gcd: Calculates the greatest common denominator of two integers and returns the value that computes.
+
+mod_inverse:Calculates the modular inverse of two integers and returns the value that computes.
+
+pow_mod_n:Calculates the result of  "(x^exp) mod n" and returns the value that computes.
+
+rsa_keygen: Produces the private and the public key and stores them in two different files. The function
+uses the "sieve_of_eratosthenis", "gcd" and "mod_inverse" functions to produce the keys.
+
+rsa_encrypt: Encrypts an input file using the key tha the user provides, and stores the ciphertext into an 
+output file.
+
+rsa_decrypt: Decrypts an input file  using the key tha the user provides, and stores the plaintext into an 
+output file.
+
+# utils.c #
+Contains printing and proofing functions.
+
+# rsa.h #
+Contains the function declarations of the "rsa.c"
+
+# utils.h #
+Contains the function declarations of the "utils.c"
